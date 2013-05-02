@@ -23,6 +23,8 @@
 		DF081F3F17330D280010CEE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF081F1A17330D280010CEE7 /* Foundation.framework */; };
 		DF081F4717330D280010CEE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF081F4517330D280010CEE7 /* InfoPlist.strings */; };
 		DF081F4A17330D280010CEE7 /* ScanBLETests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF081F4917330D280010CEE7 /* ScanBLETests.m */; };
+		DF081F5417330D360010CEE7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF081F5317330D360010CEE7 /* CoreBluetooth.framework */; };
+		DF081F56173310AC0010CEE7 /* stop-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DF081F55173310AC0010CEE7 /* stop-32.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		DF081F4617330D280010CEE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF081F4817330D280010CEE7 /* ScanBLETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanBLETests.h; sourceTree = "<group>"; };
 		DF081F4917330D280010CEE7 /* ScanBLETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanBLETests.m; sourceTree = "<group>"; };
+		DF081F5317330D360010CEE7 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		DF081F55173310AC0010CEE7 /* stop-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stop-32.png"; path = "../stop-32.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF081F5417330D360010CEE7 /* CoreBluetooth.framework in Frameworks */,
 				DF081F1917330D280010CEE7 /* UIKit.framework in Frameworks */,
 				DF081F1B17330D280010CEE7 /* Foundation.framework in Frameworks */,
 				DF081F1D17330D280010CEE7 /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +111,7 @@
 		DF081F1717330D280010CEE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF081F5317330D360010CEE7 /* CoreBluetooth.framework */,
 				DF081F1817330D280010CEE7 /* UIKit.framework */,
 				DF081F1A17330D280010CEE7 /* Foundation.framework */,
 				DF081F1C17330D280010CEE7 /* CoreGraphics.framework */,
@@ -122,6 +128,7 @@
 				DF081F3017330D280010CEE7 /* MainStoryboard.storyboard */,
 				DF081F3317330D280010CEE7 /* ViewController.h */,
 				DF081F3417330D280010CEE7 /* ViewController.m */,
+				DF081F55173310AC0010CEE7 /* stop-32.png */,
 				DF081F1F17330D280010CEE7 /* Supporting Files */,
 			);
 			path = ScanBLE;
@@ -236,6 +243,7 @@
 				DF081F2D17330D280010CEE7 /* Default@2x.png in Resources */,
 				DF081F2F17330D280010CEE7 /* Default-568h@2x.png in Resources */,
 				DF081F3217330D280010CEE7 /* MainStoryboard.storyboard in Resources */,
+				DF081F56173310AC0010CEE7 /* stop-32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
+#import <CoreBluetooth/CBService.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CBCentralManagerDelegate, CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate>
+{
+    UITableView *myTableView;
+    UIImageView *tableImage;
+    NSMutableArray *foundDevices;
+    int nowConnected;
+}
 
+@property (nonatomic, strong) CBCentralManager *CM;
+@property (nonatomic, strong) CBPeripheral *activePeripheral;
+@property (nonatomic, retain) UITableView *myTableView;
+@property (nonatomic, retain) UIImageView *tableImage;
+@property (nonatomic, retain) NSMutableArray *foundDevices;
+@property (retain, nonatomic) IBOutlet UILabel *receivedLabel;
+@property (retain, nonatomic) IBOutlet UILabel *nowConnectedLabel;
+
+- (IBAction)scanForDevicesButton:(id)sender;
+- (IBAction)sendSomethingButton:(id)sender;
 @end
