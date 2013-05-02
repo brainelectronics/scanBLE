@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF081F1917330D280010CEE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF081F1817330D280010CEE7 /* UIKit.framework */; };
+		DF081F1B17330D280010CEE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF081F1A17330D280010CEE7 /* Foundation.framework */; };
+		DF081F1D17330D280010CEE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF081F1C17330D280010CEE7 /* CoreGraphics.framework */; };
+		DF081F2317330D280010CEE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF081F2117330D280010CEE7 /* InfoPlist.strings */; };
+		DF081F2517330D280010CEE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF081F2417330D280010CEE7 /* main.m */; };
+		DF081F2917330D280010CEE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF081F2817330D280010CEE7 /* AppDelegate.m */; };
+		DF081F2B17330D280010CEE7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DF081F2A17330D280010CEE7 /* Default.png */; };
+		DF081F2D17330D280010CEE7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF081F2C17330D280010CEE7 /* Default@2x.png */; };
+		DF081F2F17330D280010CEE7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF081F2E17330D280010CEE7 /* Default-568h@2x.png */; };
+		DF081F3217330D280010CEE7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF081F3017330D280010CEE7 /* MainStoryboard.storyboard */; };
+		DF081F3517330D280010CEE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF081F3417330D280010CEE7 /* ViewController.m */; };
+		DF081F3D17330D280010CEE7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF081F3C17330D280010CEE7 /* SenTestingKit.framework */; };
+		DF081F3E17330D280010CEE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF081F1817330D280010CEE7 /* UIKit.framework */; };
+		DF081F3F17330D280010CEE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF081F1A17330D280010CEE7 /* Foundation.framework */; };
+		DF081F4717330D280010CEE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF081F4517330D280010CEE7 /* InfoPlist.strings */; };
+		DF081F4A17330D280010CEE7 /* ScanBLETests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF081F4917330D280010CEE7 /* ScanBLETests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF081F4017330D280010CEE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF081F0D17330D280010CEE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF081F1417330D280010CEE7;
+			remoteInfo = ScanBLE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF081F1517330D280010CEE7 /* ScanBLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanBLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF081F1817330D280010CEE7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF081F1A17330D280010CEE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF081F1C17330D280010CEE7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF081F2017330D280010CEE7 /* ScanBLE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScanBLE-Info.plist"; sourceTree = "<group>"; };
+		DF081F2217330D280010CEE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF081F2417330D280010CEE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF081F2617330D280010CEE7 /* ScanBLE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScanBLE-Prefix.pch"; sourceTree = "<group>"; };
+		DF081F2717330D280010CEE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF081F2817330D280010CEE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF081F2A17330D280010CEE7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DF081F2C17330D280010CEE7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DF081F2E17330D280010CEE7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DF081F3117330D280010CEE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DF081F3317330D280010CEE7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DF081F3417330D280010CEE7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DF081F3B17330D280010CEE7 /* ScanBLETests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanBLETests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF081F3C17330D280010CEE7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DF081F4417330D280010CEE7 /* ScanBLETests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScanBLETests-Info.plist"; sourceTree = "<group>"; };
+		DF081F4617330D280010CEE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF081F4817330D280010CEE7 /* ScanBLETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanBLETests.h; sourceTree = "<group>"; };
+		DF081F4917330D280010CEE7 /* ScanBLETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanBLETests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF081F1217330D280010CEE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF081F1917330D280010CEE7 /* UIKit.framework in Frameworks */,
+				DF081F1B17330D280010CEE7 /* Foundation.framework in Frameworks */,
+				DF081F1D17330D280010CEE7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF081F3717330D280010CEE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF081F3D17330D280010CEE7 /* SenTestingKit.framework in Frameworks */,
+				DF081F3E17330D280010CEE7 /* UIKit.framework in Frameworks */,
+				DF081F3F17330D280010CEE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF081F0C17330D280010CEE7 = {
+			isa = PBXGroup;
+			children = (
+				DF081F1E17330D280010CEE7 /* ScanBLE */,
+				DF081F4217330D280010CEE7 /* ScanBLETests */,
+				DF081F1717330D280010CEE7 /* Frameworks */,
+				DF081F1617330D280010CEE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF081F1617330D280010CEE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF081F1517330D280010CEE7 /* ScanBLE.app */,
+				DF081F3B17330D280010CEE7 /* ScanBLETests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF081F1717330D280010CEE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF081F1817330D280010CEE7 /* UIKit.framework */,
+				DF081F1A17330D280010CEE7 /* Foundation.framework */,
+				DF081F1C17330D280010CEE7 /* CoreGraphics.framework */,
+				DF081F3C17330D280010CEE7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF081F1E17330D280010CEE7 /* ScanBLE */ = {
+			isa = PBXGroup;
+			children = (
+				DF081F2717330D280010CEE7 /* AppDelegate.h */,
+				DF081F2817330D280010CEE7 /* AppDelegate.m */,
+				DF081F3017330D280010CEE7 /* MainStoryboard.storyboard */,
+				DF081F3317330D280010CEE7 /* ViewController.h */,
+				DF081F3417330D280010CEE7 /* ViewController.m */,
+				DF081F1F17330D280010CEE7 /* Supporting Files */,
+			);
+			path = ScanBLE;
+			sourceTree = "<group>";
+		};
+		DF081F1F17330D280010CEE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF081F2017330D280010CEE7 /* ScanBLE-Info.plist */,
+				DF081F2117330D280010CEE7 /* InfoPlist.strings */,
+				DF081F2417330D280010CEE7 /* main.m */,
+				DF081F2617330D280010CEE7 /* ScanBLE-Prefix.pch */,
+				DF081F2A17330D280010CEE7 /* Default.png */,
+				DF081F2C17330D280010CEE7 /* Default@2x.png */,
+				DF081F2E17330D280010CEE7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF081F4217330D280010CEE7 /* ScanBLETests */ = {
+			isa = PBXGroup;
+			children = (
+				DF081F4817330D280010CEE7 /* ScanBLETests.h */,
+				DF081F4917330D280010CEE7 /* ScanBLETests.m */,
+				DF081F4317330D280010CEE7 /* Supporting Files */,
+			);
+			path = ScanBLETests;
+			sourceTree = "<group>";
+		};
+		DF081F4317330D280010CEE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF081F4417330D280010CEE7 /* ScanBLETests-Info.plist */,
+				DF081F4517330D280010CEE7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF081F1417330D280010CEE7 /* ScanBLE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF081F4D17330D280010CEE7 /* Build configuration list for PBXNativeTarget "ScanBLE" */;
+			buildPhases = (
+				DF081F1117330D280010CEE7 /* Sources */,
+				DF081F1217330D280010CEE7 /* Frameworks */,
+				DF081F1317330D280010CEE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScanBLE;
+			productName = ScanBLE;
+			productReference = DF081F1517330D280010CEE7 /* ScanBLE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF081F3A17330D280010CEE7 /* ScanBLETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF081F5017330D280010CEE7 /* Build configuration list for PBXNativeTarget "ScanBLETests" */;
+			buildPhases = (
+				DF081F3617330D280010CEE7 /* Sources */,
+				DF081F3717330D280010CEE7 /* Frameworks */,
+				DF081F3817330D280010CEE7 /* Resources */,
+				DF081F3917330D280010CEE7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF081F4117330D280010CEE7 /* PBXTargetDependency */,
+			);
+			name = ScanBLETests;
+			productName = ScanBLETests;
+			productReference = DF081F3B17330D280010CEE7 /* ScanBLETests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF081F0D17330D280010CEE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Jonas Scharpf";
+			};
+			buildConfigurationList = DF081F1017330D280010CEE7 /* Build configuration list for PBXProject "ScanBLE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF081F0C17330D280010CEE7;
+			productRefGroup = DF081F1617330D280010CEE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF081F1417330D280010CEE7 /* ScanBLE */,
+				DF081F3A17330D280010CEE7 /* ScanBLETests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF081F1317330D280010CEE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF081F2317330D280010CEE7 /* InfoPlist.strings in Resources */,
+				DF081F2B17330D280010CEE7 /* Default.png in Resources */,
+				DF081F2D17330D280010CEE7 /* Default@2x.png in Resources */,
+				DF081F2F17330D280010CEE7 /* Default-568h@2x.png in Resources */,
+				DF081F3217330D280010CEE7 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF081F3817330D280010CEE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF081F4717330D280010CEE7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF081F3917330D280010CEE7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF081F1117330D280010CEE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF081F2517330D280010CEE7 /* main.m in Sources */,
+				DF081F2917330D280010CEE7 /* AppDelegate.m in Sources */,
+				DF081F3517330D280010CEE7 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF081F3617330D280010CEE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF081F4A17330D280010CEE7 /* ScanBLETests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF081F4117330D280010CEE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF081F1417330D280010CEE7 /* ScanBLE */;
+			targetProxy = DF081F4017330D280010CEE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF081F2117330D280010CEE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF081F2217330D280010CEE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DF081F3017330D280010CEE7 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF081F3117330D280010CEE7 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		DF081F4517330D280010CEE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF081F4617330D280010CEE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF081F4B17330D280010CEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF081F4C17330D280010CEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF081F4E17330D280010CEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScanBLE/ScanBLE-Prefix.pch";
+				INFOPLIST_FILE = "ScanBLE/ScanBLE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF081F4F17330D280010CEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScanBLE/ScanBLE-Prefix.pch";
+				INFOPLIST_FILE = "ScanBLE/ScanBLE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DF081F5117330D280010CEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScanBLE.app/ScanBLE";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScanBLE/ScanBLE-Prefix.pch";
+				INFOPLIST_FILE = "ScanBLETests/ScanBLETests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DF081F5217330D280010CEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScanBLE.app/ScanBLE";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScanBLE/ScanBLE-Prefix.pch";
+				INFOPLIST_FILE = "ScanBLETests/ScanBLETests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF081F1017330D280010CEE7 /* Build configuration list for PBXProject "ScanBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF081F4B17330D280010CEE7 /* Debug */,
+				DF081F4C17330D280010CEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF081F4D17330D280010CEE7 /* Build configuration list for PBXNativeTarget "ScanBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF081F4E17330D280010CEE7 /* Debug */,
+				DF081F4F17330D280010CEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF081F5017330D280010CEE7 /* Build configuration list for PBXNativeTarget "ScanBLETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF081F5117330D280010CEE7 /* Debug */,
+				DF081F5217330D280010CEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF081F0D17330D280010CEE7 /* Project object */;
+}
