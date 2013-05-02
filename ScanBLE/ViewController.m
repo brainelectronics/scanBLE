@@ -10,10 +10,12 @@
 
 @interface ViewController () <CBPeripheralDelegate, CBPeripheralManagerDelegate>
 {
-//@private CBCharacteristic *sendCharacteristic;
+    
 }
+
 @property (nonatomic, strong) CBMutableCharacteristic *transferCharacteristic;
 @property (nonatomic, strong) CBPeripheralManager *periphalManager;
+
 @end
 
 @implementation ViewController
@@ -26,6 +28,10 @@
 @synthesize receivedLabel;
 @synthesize nowConnectedLabel;
 @synthesize periphalManager;
+@synthesize errorLabel;
+@synthesize nameLabel;
+@synthesize rssiValueLabel;
+
 
 - (void)viewDidLoad
 {
@@ -58,6 +64,9 @@
 
 -(void)dealloc
 {
+    [errorLabel release];
+    [nameLabel release];
+    [rssiValueLabel release];
     [super dealloc];
     
     [receivedLabel release];
@@ -104,20 +113,20 @@
      [cell.contentView addSubview:tableImage];
      */
     CGRect nameFrame = CGRectMake(45, 7, 265, 20);
-    UILabel *nameLabel = [[[UILabel alloc] initWithFrame:nameFrame] autorelease];
-    nameLabel.numberOfLines = 2;
-    nameLabel.font = [UIFont boldSystemFontOfSize:12];
-    nameLabel.text = [foundDevices objectAtIndex:indexPath.row];//deviceName;
-    [cell.contentView addSubview:nameLabel];
+    UILabel *nameLabelTable = [[[UILabel alloc] initWithFrame:nameFrame] autorelease];
+    nameLabelTable.numberOfLines = 2;
+    nameLabelTable.font = [UIFont boldSystemFontOfSize:12];
+    nameLabelTable.text = peripheralName;//[foundDevices objectAtIndex:indexPath.row];//deviceName;
+    [cell.contentView addSubview:nameLabelTable];
     
-    /*
-    CGRect serviceFrame = CGRectMake(115.0, 7.0, 195.0, 20.0);
-    UILabel *serviceLabel = [[[UILabel alloc] initWithFrame:serviceFrame] autorelease];
-    serviceLabel.numberOfLines = 2;
-    serviceLabel.font = [UIFont boldSystemFontOfSize:12];
-    serviceLabel.text = @"Service Name";
-    [cell.contentView addSubview:serviceLabel];
-    */
+    
+    CGRect rssiFrame = CGRectMake(115.0, 7.0, 195.0, 20.0);
+    UILabel *rssiLabelTable = [[[UILabel alloc] initWithFrame:rssiFrame] autorelease];
+    rssiLabelTable.numberOfLines = 2;
+    rssiLabelTable.font = [UIFont boldSystemFontOfSize:12];
+    rssiLabelTable.text = rssiValueString;//@"Service Name";
+    [cell.contentView addSubview:rssiLabelTable];
+    
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
@@ -185,7 +194,7 @@
     }
     
     NSLog(@"Central manager state: %@", state);
-    
+    errorLabel.text = state;
     return FALSE;
 }
 
@@ -239,7 +248,14 @@
 -(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
 {
     NSLog(@"Received peripheral: %@", peripheral);
+    NSLog(@"Peripheral Name: %@", peripheral.name);
     NSLog(@"Ad data: %@", advertisementData);
+    NSLog(@"RSSI Value %d", RSSI.integerValue);
+    
+    peripheralName = peripheral.name;
+    rssiValueString = [[NSString alloc]initWithString:[NSString stringWithFormat:@"%d",RSSI.integerValue]];
+    nameLabel.text = peripheralName;
+    rssiValueLabel.text = rssiValueString;
     
     if (![self.foundDevices containsObject:peripheral])
     {

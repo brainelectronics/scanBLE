@@ -26,7 +26,31 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Received:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2p-ee-lJS">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="pAT-OA-GVO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Error:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXM-7G-CgO">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2u-7X-5zh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="N9v-rG-Lb4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="RSSI:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nee-51-pFI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="PqL-ct-kjz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -49,7 +73,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Now connected:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27J-ao-dF5">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="yZ7-7b-5jS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -58,28 +85,63 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LE-g5-6e1">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ell-q6-cgC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxo-ZW-74J">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="Mw1-43-j4y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="n2p-ee-lJS" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="1k2-Da-PyU"/>
+                            <constraint firstItem="9LE-g5-6e1" firstAttribute="centerX" secondItem="Q1F-DU-Uxh" secondAttribute="centerX" type="default" id="41a-uN-HK3"/>
+                            <constraint firstItem="t2u-7X-5zh" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="5q6-tc-OCu"/>
+                            <constraint firstItem="nee-51-pFI" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="6vj-KG-SY6"/>
                             <constraint firstItem="oCY-mS-76u" firstAttribute="top" secondItem="27J-ao-dF5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="7uf-o1-OGD"/>
                             <constraint firstItem="Q1F-DU-Uxh" firstAttribute="centerX" secondItem="COS-6W-Ujy" secondAttribute="centerX" type="default" id="CG1-mb-Bjb"/>
+                            <constraint firstAttribute="trailing" secondItem="9LE-g5-6e1" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="EJ5-fA-aLf"/>
+                            <constraint firstItem="nee-51-pFI" firstAttribute="baseline" secondItem="Vxo-ZW-74J" secondAttribute="baseline" type="default" id="FP4-K7-wlP"/>
+                            <constraint firstItem="t2u-7X-5zh" firstAttribute="trailing" secondItem="gXM-7G-CgO" secondAttribute="trailing" type="default" id="HQr-Fn-LAT"/>
                             <constraint firstItem="27J-ao-dF5" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KDe-Az-QAp"/>
                             <constraint firstItem="n2p-ee-lJS" firstAttribute="top" secondItem="oCY-mS-76u" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="KPc-Bl-bi6"/>
                             <constraint firstItem="oCY-mS-76u" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="MuV-7U-Eim"/>
+                            <constraint firstItem="gXM-7G-CgO" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Qfe-p7-17m"/>
                             <constraint firstItem="lbI-Py-faI" firstAttribute="top" secondItem="n2p-ee-lJS" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Rw1-OB-hGF"/>
                             <constraint firstItem="lbI-Py-faI" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SZc-mp-QsN"/>
+                            <constraint firstItem="gXM-7G-CgO" firstAttribute="top" secondItem="ell-q6-cgC" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="WuG-gm-VJi"/>
+                            <constraint firstItem="Vxo-ZW-74J" firstAttribute="leading" secondItem="nee-51-pFI" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Y8d-3U-Gd0"/>
                             <constraint firstItem="COS-6W-Ujy" firstAttribute="top" secondItem="Q1F-DU-Uxh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="aP0-Gi-gqz"/>
+                            <constraint firstItem="Q1F-DU-Uxh" firstAttribute="top" secondItem="9LE-g5-6e1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="bEm-cc-tx7"/>
                             <constraint firstItem="27J-ao-dF5" firstAttribute="top" secondItem="3" secondAttribute="top" constant="170" id="bMx-rH-rpC"/>
-                            <constraint firstItem="lbI-Py-faI" firstAttribute="centerX" secondItem="Q1F-DU-Uxh" secondAttribute="centerX" type="default" id="dgt-uY-QDu"/>
+                            <constraint firstItem="nee-51-pFI" firstAttribute="top" secondItem="lbI-Py-faI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cSJ-SO-feK"/>
+                            <constraint firstItem="9LE-g5-6e1" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="cuB-XO-zgl"/>
+                            <constraint firstItem="9LE-g5-6e1" firstAttribute="top" secondItem="gXM-7G-CgO" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="iee-c5-2b8"/>
                             <constraint firstAttribute="trailing" secondItem="oCY-mS-76u" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="iyQ-Y3-Der"/>
+                            <constraint firstItem="ell-q6-cgC" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rr3-gZ-ajY"/>
+                            <constraint firstItem="ell-q6-cgC" firstAttribute="top" secondItem="t2u-7X-5zh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uWo-56-uoP"/>
                             <constraint firstAttribute="trailing" secondItem="lbI-Py-faI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ycF-s6-7hP"/>
                             <constraint firstAttribute="bottom" secondItem="COS-6W-Ujy" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="yfE-1v-j9N"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="errorLabel" destination="9LE-g5-6e1" id="qBj-3Y-ssO"/>
+                        <outlet property="nameLabel" destination="ell-q6-cgC" id="Mhg-71-glT"/>
                         <outlet property="nowConnectedLabel" destination="oCY-mS-76u" id="DYR-dK-Qcp"/>
                         <outlet property="receivedLabel" destination="lbI-Py-faI" id="iH3-eO-xcD"/>
+                        <outlet property="rssiValueLabel" destination="Vxo-ZW-74J" id="SrC-7u-ZGg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
